@@ -21,7 +21,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 formatter = logging.Formatter('<p>%(asctime)s - {} - %(levelname)s - %(message)s</p>'.
                               format(config['SOCKET']['SERVICE']))
-handler = logging.FileHandler(filename='/var/www/html/timer.html')
+handler = logging.FileHandler(filename='timer.html')
 handler.setLevel(logging.DEBUG)
 handler.setFormatter(formatter)
 logger.addHandler(handler)
