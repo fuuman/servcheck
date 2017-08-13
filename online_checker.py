@@ -57,7 +57,7 @@ def check():
 def main():
     logger.info("Starting..")
     check()
-    schedule.every().minute.do(check)
+    schedule.every(10).seconds.do(check)
     while True:
         schedule.run_pending()
         sleep(1)
